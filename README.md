@@ -6,7 +6,7 @@ A Ruby environment configured to run Rails projects based on [Official Ruby Imag
 
 | Ruby Version | Rails Version | Tags |
 |--------------|---------|------------------|
-| 2.6.5 | 6.0.1  | 2.6.5, latest  |
+| 2.7.0 | 6.0.1 | 2.7.0, latest, 2.6.5 |
 
 
 # Example usage
@@ -20,12 +20,12 @@ docker run -d \
 -v /storage/sistema/app:/app \
 -v /storage/sistema/bundle:/usr/local/bundle \
 -v /storage/sistema/app/start.sh:/start.sh \
-alexishida/ruby-rails:2.6.5
+alexishida/ruby-rails:2.7.0
 ```
 
 # Features
 
-* Ruby 2.6.5
+* Ruby 2.7.5
 * Node v13.1.0
 * Yarn 1.19.1
 * Database drivers (Mariadb, Mysql, Sqlite and Postgres)

@@ -45,8 +45,8 @@ RUN apt-get autoremove -y && apt-get clean
 
 RUN rm -rf /var/lib/apt/lists/*
 
-#RUN gem install bundler
-#RUN gem install rails
+RUN gem install bundler
+RUN gem install rails
 
 RUN mkdir /app
 
