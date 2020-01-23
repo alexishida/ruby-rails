@@ -25,7 +25,7 @@ alexishida/ruby-rails:2.7.0
 
 # Features
 
-* Ruby 2.7.5
+* Ruby 2.7.0
 * Node v13.1.0
 * Yarn 1.19.1
 * Database drivers (Mariadb, Mysql, Sqlite and Postgres)
