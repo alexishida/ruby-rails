@@ -4,8 +4,8 @@ export RAILS_ENV=production
 cd /app
 gem install bundler
 bundle update
-rails db:create
-rails db:migrate
-rails db:seed
-rails assets:precompile
-rails s -b 0.0.0.0
+# bundle exec rails db:create
+# bundle exec rails db:migrate
+# bundle exec rails db:seed
+bundle exec rails assets:precompile
+bundle exec rails s -b 0.0.0.0
