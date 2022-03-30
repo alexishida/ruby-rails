@@ -1,4 +1,4 @@
-FROM ruby:2.7.1
+FROM ruby:2.7.5
 
 RUN apt-get update
 
@@ -24,7 +24,7 @@ ENV LANGUAGE pt_BR.UTF-8
 #RUN rm -rf ~/Downloads/ttf-mscorefonts-installer_3.6_all.deb
 
 # Postgres dev packages
-RUN apt-get install -y libpq-dev 
+RUN apt-get install -y libpq-dev
 
 # Mariadb dev packages
 RUN apt-get install -y libmariadbd-dev
@@ -34,7 +34,7 @@ RUN apt-get install -y default-mysql-client default-libmysqlclient-dev
 
 
 # instalando nodejs e yarn
-RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 RUN apt-get install nodejs -y --no-install-recommends apt-utils
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && \
