@@ -1,4 +1,4 @@
-FROM ruby:2.7.5
+FROM ruby:3.1.2
 
 RUN apt-get update
 
@@ -46,7 +46,7 @@ RUN apt-get autoremove -y && apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN gem install bundler
-RUN gem install rails
+# RUN gem install rails
 
 RUN mkdir /app
 

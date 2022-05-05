@@ -2,11 +2,13 @@
 
 A Ruby environment configured to run Rails projects based on [Official Ruby Images](https://hub.docker.com/_/ruby).
 
-### Versions
+# Features
 
-| Ruby Version | Rails Version | Tags |
-|--------------|---------|------------------|
-| 2.7.5 | 7 | 2.7.0, latest, 2.6.5 |
+* Ruby latest, 3.1.2, 3.0.4, 2.7.6
+* Node v17.9.0
+* Yarn 1.22.18
+* Database drivers (Mariadb, Mysql, Sqlite and Postgres)
+* Locale PT-BR
 
 
 # Example usage
@@ -22,14 +24,6 @@ docker run -d \
 -v /storage/sistema/app/start.sh:/start.sh \
 alexishida/ruby-rails:2.7.5
 ```
-
-# Features
-
-* Ruby 2.7.5
-* Node v17
-* Yarn
-* Database drivers (Mariadb, Mysql, Sqlite and Postgres)
-* Locale PT-BR
 
 # Directories
 
